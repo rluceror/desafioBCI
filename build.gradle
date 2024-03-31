@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.1.1.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
+
+group 'repository.exercise.one.globallogic.cl'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    //Spring Api Restful
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    //jdbc
+    implementation 'org.springframework:spring-jdbc'
+    //Hibernate / Jpa
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //JWT
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+    //Hsqldb
+    implementation 'org.hsqldb:hsqldb:2.4.1'
+    //Junit// more entries
+    testCompile 'junit:junit:4.12'
+    // required if you want to use Mockito for unit tests
+    testCompile 'org.mockito:mockito-core:2.7.22'
+    //
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.2.4.RELEASE'
+}

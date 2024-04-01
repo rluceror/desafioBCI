@@ -29,6 +29,9 @@ un listado de objetos "teléfono", respetando el siguiente formato:
 Mediante postman con el metodo post realizar la llamada a la siguiente url:
 http://localhost:8080/v1/desafioBci/doSignIn
 
+Dentro de la carpeta "Collection Postman" se encuentra la llamada para ser importada desde Postman
+
+Para la ejecución, se debe utilizar Intellij, se importa el proyecto y en la clase "Application.java" botón derecho y ejecutar "Run Application.main()", con esto se levantará el ambiente.
 
 - Responder el código de status HTTP adecuado
 - En caso de éxito, retorne el usuario y los siguientes campos:
